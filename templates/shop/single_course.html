@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %} {{course.title}} {% endblock %}
+
+{% block content %}
+<article>
+    <h1 class="mt-4 fs-2 text-uppercase">{{course.title}}</h1>
+    <h2 class="mt-1 fs-5 text-uppercase text-body-secondary">{{course.category}}</h2>
+    <p>Price: {{course.price}}</p>
+    <p>Student Quantity: {{course.students_qty}}</p>
+    <button class="btn btn-primary">Buy</button>
+</article>
+{% endblock%}
